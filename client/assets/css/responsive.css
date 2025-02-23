@@ -1,0 +1,300 @@
+/* Laptop/Desktop Styles (1024px and above) */
+@media (max-width: 1440px) {
+  .homeSec_1 {
+    height: 920px;
+  }
+}
+
+@media (max-width: 1366px) {
+  /* Header */
+  .headerWarp {
+    padding: 20px 60px;
+    height: 100px;
+  }
+  .contentWarp h1 {
+    font-size: 50px;
+  }
+
+  .contentWarp {
+    padding-left: 60px;
+  }
+  .boxWarp:not(:first-child) .contentWarp {
+    padding: 40px 0 40px 40px;
+  }
+  .contentWarp .contentBox {
+    padding-right: 15%;
+  }
+  .homeSec_1 {
+    height: 950px;
+    padding-top: 100px;
+  }
+  .footerMain {
+    padding: 20px 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .contentWarp {
+    padding-left: 40px;
+  }
+  .boxWarp:not(:first-child) .contentWarp {
+    padding: 40px 0 40px 35px;
+  }
+  .contentWarp .contentBox {
+    padding-right: 40px;
+  }
+  .footerMain {
+    padding: 20px 40px;
+  }
+  .headerWarp {
+    padding: 20px 40px;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 992px) {
+  .logo {
+    height: 35px;
+  }
+  .contentWarp h1 {
+    font-size: 40px;
+  }
+  .title h5 {
+    font-size: 28px;
+  }
+  .title {
+    width: 70px;
+  }
+  .content {
+    width: calc(100vw - 140px);
+  }
+  .teamSliderItemImg {
+    height: auto;
+  }
+}
+/* mobile Styles */
+@media (max-width: 767px) {
+  .teamSliderItem {
+    margin-right: 16px;
+    margin-top: 20px;
+  }
+  .headerWarp {
+    padding: 15px 30px;
+  }
+
+  .navLi {
+    margin: 0 10px;
+  }
+
+  .teamSlider {
+    padding: 0 20px;
+  }
+
+  .contentBox {
+    padding: 20px;
+  }
+  .containerWarp,
+  .boxWarp {
+    flex-direction: column;
+  }
+  .homeSec_1 {
+    height: auto;
+    width: 100%;
+  }
+  .title {
+    width: auto;
+  }
+  .content {
+    width: auto;
+    height: auto;
+  }
+  .title h5 {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    transform: none;
+    text-align: center;
+    padding: 10px;
+  }
+  .title.active {
+    display: none;
+    /* width: 100%;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    border-bottom: 1px solid #fff; */
+  }
+  .title1.active {
+    border-bottom: 1px solid #161616;
+  }
+  .contentWarp h1 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+  .contentWarp {
+    padding: 20px;
+  }
+  .contentWarp .contentBox {
+    padding: 0;
+  }
+  .footerMain {
+    padding: 20px;
+    height: auto;
+  }
+
+  .homeSec_1 {
+    padding-top: 80px;
+  }
+
+  .teamSlider {
+    padding: 0 10px;
+  }
+
+  .contentBox {
+    padding: 15px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+  .footerMain ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form_div {
+    width: 100%;
+  }
+  .input_div {
+    height: 45px;
+  }
+  .input_div:last-child {
+    height: 80px;
+  }
+  .input_div input,
+  .input_div textarea {
+    font-size: 14px;
+  }
+  .input_div input::placeholder,
+  .input_div textarea::placeholder {
+    font-size: 14px;
+  }
+  .footerMain ul li span,
+  .footerMain ul li a {
+    font-size: 14px;
+  }
+  /* Header */
+  .headerWarp {
+    padding: 10px 15px;
+    height: 80px;
+  }
+  /* ----- mobile menu -------- */
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    background-color: #161616;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    z-index: 10;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+  }
+  .hamburger span:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .menu_mobile.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 8;
+    height: 100%;
+    width: 100%;
+  }
+  .menu_mobile ul {
+    background-color: #ffffff;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    padding-top: 80px;
+    transition: all 0.6s ease-in-out;
+    z-index: 9;
+    transform: translateX(150%);
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .menu_mobile.active ul {
+    transform: translateX(0%);
+  }
+  .headerWarp ul li a {
+    padding: 0;
+  }
+
+  .menu_mobile li {
+    margin-bottom: 10px;
+  }
+
+  .menu_mobile a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .menu_mobile a:hover {
+    color: #ccc;
+  }
+
+  /* Toggle menu_mobile on click */
+  .hamburger span {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@media (max-width: 575px) {
+  .headerWarp ul li a {
+    padding: 0px;
+  }
+  .footerMain {
+    padding: 15px;
+  }
+  .footerMain ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contentWarp {
+    padding: 15px;
+  }
+  .contentWarp .contentBox {
+    padding: 0;
+  }
+
+  .teamSliderItem {
+    margin-right: 5px;
+  }
+}
