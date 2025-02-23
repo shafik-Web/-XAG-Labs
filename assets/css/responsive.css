@@ -1,7 +1,7 @@
 /* Laptop/Desktop Styles (1024px and above) */
 @media (max-width: 1440px) {
   .homeSec_1 {
-    height: 920px;
+    height: 960px;
   }
 }
 
@@ -25,7 +25,7 @@
     padding-right: 15%;
   }
   .homeSec_1 {
-    height: 950px;
+    height: 940px;
     padding-top: 100px;
   }
   .footerMain {
