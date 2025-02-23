@@ -1,4 +1,10 @@
-/* Laptop/Desktop Styles (1024px and above) */
+/* Laptop/Desktop Styles*/
+@media (max-width: 1600px) {
+  .homeSec_1 {
+    height: 1000px;
+  }
+}
+
 @media (max-width: 1440px) {
   .homeSec_1 {
     height: 960px;
