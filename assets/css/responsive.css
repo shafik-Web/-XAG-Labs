@@ -98,6 +98,9 @@
   .contentBox {
     padding: 20px;
   }
+  .boxWarp:not(:first-child) .contentWarp {
+    padding: 20px;
+  }
   .containerWarp,
   .boxWarp {
     flex-direction: column;
